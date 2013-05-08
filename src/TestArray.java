@@ -5,15 +5,21 @@ public class TestArray {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
+		System.out.println("ì‹œì‘í•©ë‹ˆë‹¤~");
 		int Student[][] = new int[][]{{1,3,2,4,3,1,4,2,2,1},{3,2,4,2,2,1,1,3,4,1},{2,4,3,2,1,2,1,3,3,4},{2,3,3,1,1,3,2,2,4,4},{3,1,1,2,4,1,2,3,1,3}};
 		int correct[] = new int[]{Integer.parseInt(args[0]),Integer.parseInt(args[0]),Integer.parseInt(args[1]),Integer.parseInt(args[2]),Integer.parseInt(args[3]),Integer.parseInt(args[4]),Integer.parseInt(args[5]),Integer.parseInt(args[6]),Integer.parseInt(args[7]),Integer.parseInt(args[8]),Integer.parseInt(args[9])};
 		int Stu_score[] = new int[]{0,0,0,0,0};
 		char OX[][] = new char[5][10];
 		
-		System.out.println("ÇĞ»ıµé Á¡¼ö");
+		if(Stu_score.length!=10){
+			
+		
+		
+		System.out.println("í•™ìƒë“¤ ì ìˆ˜");
 		for(int i=0;i<=4;i++){
 			for(int j=0;j<=9;j++){
-				System.out.print("ÇĞ»ı"+i+" : "+Student[i][j]+" ");
+				System.out.print("í•™ìƒ"+i+" : "+Student[i][j]+" ");
 			}
 			System.out.println();
 		}
@@ -34,8 +40,11 @@ public class TestArray {
 					OX[i][j]='X';
 				}
 			}
-		System.out.println("ÇĞ»ı"+(i+1)+"ÀÇ Á¡¼ö´Â "+Stu_score[i]);
+		System.out.println("í•™ìƒ"+(i+1)+"ì˜ ì ìˆ˜ëŠ” "+Stu_score[i]);
 		System.out.println(OX[i]);
+		}
+		}else{
+			System.out.println("ì •ë‹µì˜ ê°¯ìˆ˜ê°€ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 	}
 }
